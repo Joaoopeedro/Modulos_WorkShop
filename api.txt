@@ -1,0 +1,30 @@
+# O servidor inciará na porta:3000 - acesse 
+# Troque a palavra localhost pelo IP do Servidor!
+http://localhost:3000
+
+
+# Login
+> Para realizar login, é preciso usar o endpoint:
+
+
+POST /login
+{
+  "email": "olivier@mail.com",
+  "password": "bestPassw0rd"
+}
+
+
+# Users - POST
+> Para cadastrar os usuários com imagem, utilize pelo menos os campos abaixo, com corpo do tipo form-data:
+
+POST /users
+    {
+      "email": "seuemail@email.com",
+      "password": "suasenha",
+      "user_img": "1713478562094.jpg" 
+    }
+
+
+# Imagem
+> Qualquer imagem que for enviada estará disponível no endpoint:
+http://localhost:3000/static/nomedaimagem.png
